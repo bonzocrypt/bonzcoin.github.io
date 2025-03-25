@@ -48,11 +48,22 @@
             padding: 20px 0;
             text-align: center;
         }
-        .token-card {
-            background: #1f1f1f;
-            border-radius: 15px;
+        .token-table {
+            background-color: #1f1f1f;
+            border-radius: 10px;
             padding: 20px;
-            margin-bottom: 20px;
+        }
+        .token-table table {
+            width: 100%;
+        }
+        .token-table th,
+        .token-table td {
+            padding: 12px;
+            border: 1px solid #333;
+        }
+        .token-table th {
+            background-color: #222;
+            color: #f0f0f0;
         }
     </style>
 </head>
@@ -105,17 +116,50 @@
 <!-- Tokenomics Section -->
 <section id="tokenomics" class="section bg-dark">
     <div class="container">
-        <h2>Tokenomics</h2>
-        <div class="row">
-            <div class="col-md-6 token-card">
-                <h4>Total Supply: 8,675,309,000 BONZ</h4>
-                <ul>
-                    <li>Liquidity Pool: 60%</li>
-                    <li>Treasury: 20%</li>
-                    <li>Marketing & Community: 10%</li>
-                    <li>Team Allocation: 10%</li>
-                </ul>
-            </div>
+        <h2>BONZ Tokenomics</h2>
+        <p><strong>Total Supply:</strong> 8,675,309,000 BONZ</p>
+        <div class="token-table">
+            <table class="table table-dark table-bordered">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>% of Supply</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🔥 Presale</td>
+                        <td>35%</td>
+                        <td>Raises funds for launch, initial liquidity, and early marketing. Transparent and fair allocation — no insider deals.</td>
+                    </tr>
+                    <tr>
+                        <td>💧 Liquidity Pool</td>
+                        <td>35%</td>
+                        <td>Locked upon launch to ensure trading stability and protect buyers from early dumps.</td>
+                    </tr>
+                    <tr>
+                        <td>🎤 Artist & Fan Incentives</td>
+                        <td>10%</td>
+                        <td>Used for tipping, giveaways, unlockables, and rewarding real community engagement from both artists and fans.</td>
+                    </tr>
+                    <tr>
+                        <td>📢 Marketing & Partnerships</td>
+                        <td>10%</td>
+                        <td>Fueling project awareness, media campaigns, influencer support, and artist collabs.</td>
+                    </tr>
+                    <tr>
+                        <td>🏛️ Treasury</td>
+                        <td>5%</td>
+                        <td>Reserved for future ecosystem development — tools for artists, fan experiences, and integrations like ticketing or merch. Public wallet will be viewable.</td>
+                    </tr>
+                    <tr>
+                        <td>🧠 Team Allocation</td>
+                        <td>5%</td>
+                        <td>Vested over time to ensure long-term alignment. No early dumps, only committed builders.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </section>
@@ -143,7 +187,7 @@
 </section>
 
 <!-- Community Section -->
-<section id="community" class="section">
+<section class="section">
     <div class="container">
         <h2>Join Our Community</h2>
         <p>Become part of our growing family. Stay updated and participate actively:</p>
@@ -156,9 +200,8 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
-        <p class="small mb-2">
-            Disclaimer: BONZ Coin is a community-driven token. There are no guaranteed returns. Always do your own research before participating.
-            <br>
+        <p class="small mb-2 text-light">
+            Disclaimer: BONZ Coin is a community-driven token. There are no guaranteed returns. Always do your own research before participating. <br>
             <a href="disclaimer.html" class="text-info">Read Full Disclaimer</a>
         </p>
         <p>BONZ Coin &copy; 2025. All Rights Reserved.</p>
