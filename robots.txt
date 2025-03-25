@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bonzcoin.io/sitemap.xml
